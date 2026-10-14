@@ -1,0 +1,39 @@
+{
+  "target": 2550,
+  "items": {
+    "ceb_sgn": 121,
+    "sgn_dad": 56,
+    "dad_tag": 230,
+    "eni_coron": 110,
+    "usu_ceb": 65,
+    "ceb_arrival": 76,
+    "hcmc": 293,
+    "hoian": 167,
+    "phongnha": 165,
+    "danang": 207,
+    "pps_arrival": 50,
+    "port_barton": 200,
+    "elnido": 220,
+    "elnido_beach": 143,
+    "coron": 234,
+    "mactan_final": 100
+  },
+  "locked": {
+    "ceb_sgn": true,
+    "sgn_dad": true,
+    "dad_tag": true,
+    "eni_coron": true,
+    "usu_ceb": true,
+    "ceb_arrival": false,
+    "hcmc": false,
+    "hoian": false,
+    "phongnha": false,
+    "danang": false,
+    "pps_arrival": false,
+    "port_barton": false,
+    "elnido": false,
+    "elnido_beach": false,
+    "coron": false,
+    "mactan_final": false
+  }
+}

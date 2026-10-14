@@ -1,0 +1,62 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master SE Asia Trip Budget</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Master Budget Tracker</h1>
+  <div class="subtitle">Vietnam → Port Baton → El Nido → Coron (4 Nights Da Nang)</div>
+
+  <div class="summary-card">
+    <div>
+      <div class="stat-label">Target Budget</div>
+      <div class="stat-val" id="disp-total-budget">$4,000</div>
+    </div>
+    <div>
+      <div class="stat-label">Total Expenses</div>
+      <div class="stat-val" id="disp-total-expenses">$0</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill"></div></div>
+    </div>
+    <div>
+      <div class="stat-label">Remaining Buffer</div>
+      <div class="stat-val surplus" id="disp-remaining">$0</div>
+    </div>
+  </div>
+
+  <div class="row" style="background: #0f172a; padding: 12px 16px; border-radius: 8px; border: 1px solid #334155; margin-bottom: 16px;">
+    <label><strong>Target Trip Budget</strong></label>
+    <input type="range" id="slider-target" min="2000" max="6000" step="50" value="4000">
+    <div class="val-display" id="val-target">$4,000</div>
+  </div>
+
+  <div class="button-group">
+    <button class="primary" id="btn-save" onclick="saveToLocalDrive()">💾 Save Directly to PC</button>
+    <button id="btn-load" onclick="loadFromLocalDrive()">📂 Load Specific File</button>
+    <button onclick="resetDefaults()">🔄 Reset</button>
+  </div>
+
+  <div class="section-title">
+    <span>✈️ Regional Transit (Flights & Transfers)</span>
+    <span class="section-total" id="flights-total">$0</span>
+  </div>
+  <div id="flight-sliders"></div>
+
+  <div class="section-title">
+    <span>🏨 Regional Stays</span>
+    <span class="section-total" id="hotels-total">$0</span>
+  </div>
+  <div id="hotel-sliders"></div>
+</div>
+
+</body>
+</html>
